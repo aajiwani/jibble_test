@@ -8,9 +8,9 @@ class SearchPeopleCommand extends Command {
   }
 }
 
-SearchPeopleCommand.description = `Describe the command here
+SearchPeopleCommand.description = `Searches people using public OData API
 ...
-Extra documentation goes here
+Using public OData API, searches available people information on it
 `
 
 SearchPeopleCommand.flags = {

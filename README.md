@@ -107,7 +107,7 @@ _See code: [src/commands/person.js](https://github.com/aajiwani/jibble_test/blob
 
 ## `jibble_test search_people`
 
-Describe the command here
+Searches people using public OData API
 
 ```
 USAGE
@@ -118,7 +118,7 @@ OPTIONS
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Using public OData API, searches available people information on it
 ```
 
 _See code: [src/commands/search_people.js](https://github.com/aajiwani/jibble_test/blob/v0.0.1/src/commands/search_people.js)_
