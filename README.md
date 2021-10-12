@@ -8,6 +8,14 @@ A repo that holds my test progress for Jibble interview.
 [![Downloads/week](https://img.shields.io/npm/dw/jibble_test.svg)](https://npmjs.org/package/jibble_test)
 [![License](https://img.shields.io/npm/l/jibble_test.svg)](https://github.com/aajiwani/jibble_test/blob/master/package.json)
 
+# Usage during development
+```sh-session
+$ npm install
+$ ./bin/run COMMAND
+example
+$ ./bin/run person -u scottketchum
+```
+
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
@@ -78,7 +86,7 @@ USAGE
   $ jibble_test list_people
 
 OPTIONS
-  -n, --name=name  name to print
+  -c, --count=count  count of result rows from the top
 
 DESCRIPTION
   ...
@@ -96,7 +104,7 @@ USAGE
   $ jibble_test person
 
 OPTIONS
-  -n, --name=name  name to print
+  -u, --username=username  username to find the person against
 
 DESCRIPTION
   ...
@@ -114,7 +122,7 @@ USAGE
   $ jibble_test search_people
 
 OPTIONS
-  -n, --name=name  name to print
+  -f, --firstname=firstname  the firstname by which the people should be filtered
 
 DESCRIPTION
   ...
