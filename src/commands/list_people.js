@@ -8,9 +8,9 @@ class ListPeopleCommand extends Command {
   }
 }
 
-ListPeopleCommand.description = `Describe the command here
+ListPeopleCommand.description = `Lists people using public OData API
 ...
-Extra documentation goes here
+Using public OData API, lists available people information on it
 `
 
 ListPeopleCommand.flags = {

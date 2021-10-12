@@ -71,7 +71,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3
 
 ## `jibble_test list_people`
 
-Describe the command here
+Lists people using public OData API
 
 ```
 USAGE
@@ -82,7 +82,7 @@ OPTIONS
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Using public OData API, lists available people information on it
 ```
 
 _See code: [src/commands/list_people.js](https://github.com/aajiwani/jibble_test/blob/v0.0.1/src/commands/list_people.js)_
