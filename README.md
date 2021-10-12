@@ -89,7 +89,7 @@ _See code: [src/commands/list_people.js](https://github.com/aajiwani/jibble_test
 
 ## `jibble_test person`
 
-Describe the command here
+Searches and lists a person using its identifier over public OData API
 
 ```
 USAGE
@@ -100,7 +100,7 @@ OPTIONS
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Using public OData API, tries to search an individual and list the attributes associated with him/her
 ```
 
 _See code: [src/commands/person.js](https://github.com/aajiwani/jibble_test/blob/v0.0.1/src/commands/person.js)_

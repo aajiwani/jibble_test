@@ -8,9 +8,9 @@ class PersonCommand extends Command {
   }
 }
 
-PersonCommand.description = `Describe the command here
+PersonCommand.description = `Searches and lists a person using its identifier over public OData API
 ...
-Extra documentation goes here
+Using public OData API, tries to search an individual and list the attributes associated with him/her
 `
 
 PersonCommand.flags = {
