@@ -30,6 +30,9 @@ USAGE
 <!-- commands -->
 * [`jibble_test hello`](#jibble_test-hello)
 * [`jibble_test help [COMMAND]`](#jibble_test-help-command)
+* [`jibble_test list_people`](#jibble_test-list_people)
+* [`jibble_test person`](#jibble_test-person)
+* [`jibble_test search_people`](#jibble_test-search_people)
 
 ## `jibble_test hello`
 
@@ -65,4 +68,58 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
+
+## `jibble_test list_people`
+
+Describe the command here
+
+```
+USAGE
+  $ jibble_test list_people
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/list_people.js](https://github.com/aajiwani/jibble_test/blob/v0.0.1/src/commands/list_people.js)_
+
+## `jibble_test person`
+
+Describe the command here
+
+```
+USAGE
+  $ jibble_test person
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/person.js](https://github.com/aajiwani/jibble_test/blob/v0.0.1/src/commands/person.js)_
+
+## `jibble_test search_people`
+
+Describe the command here
+
+```
+USAGE
+  $ jibble_test search_people
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/search_people.js](https://github.com/aajiwani/jibble_test/blob/v0.0.1/src/commands/search_people.js)_
 <!-- commandsstop -->
