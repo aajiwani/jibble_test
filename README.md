@@ -17,6 +17,7 @@ $ ./bin/run person -u scottketchum
 ```
 
 <!-- toc -->
+* [Usage during development](#usage-during-development)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
@@ -36,11 +37,33 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`jibble_test edit_person`](#jibble_test-edit_person)
 * [`jibble_test hello`](#jibble_test-hello)
 * [`jibble_test help [COMMAND]`](#jibble_test-help-command)
 * [`jibble_test list_people`](#jibble_test-list_people)
 * [`jibble_test person`](#jibble_test-person)
 * [`jibble_test search_people`](#jibble_test-search_people)
+
+## `jibble_test edit_person`
+
+Enables you to post a person to the database
+
+```
+USAGE
+  $ jibble_test edit_person
+
+OPTIONS
+  -u, --username=username    username to fill in the data
+  -f, --firstname=firstname  first name to fill in the data
+  -l, --lastname=lastname    last name to fill in the data
+  --create                   a boolean to represent the operation to perform on person entity
+
+DESCRIPTION
+  ...
+  Using public OData API, tries to post a person data to fill in the database
+```
+
+_See code: [src/commands/edit_person.js](https://github.com/aajiwani/jibble_test/blob/v0.0.1/src/commands/edit_person.js)_
 
 ## `jibble_test hello`
 
