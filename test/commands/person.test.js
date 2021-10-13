@@ -1,4 +1,5 @@
-const {expect, test} = require('@oclif/test')
+const {expect, test} = require('@oclif/test');
+const UNIQUE_KEY = require('./../const').UNIQUE_KEY;
 
 describe('person', () => {
   test
@@ -12,7 +13,7 @@ describe('person', () => {
   .stdout()
   .nock('https://services.odata.org', api =>
     api
-      .get('/TripPinRESTierService/People(%27scottketchum%27)')
+      .get(`/TripPinRESTierService/(S(${UNIQUE_KEY}))/People(%27scottketchum%27)`)
       .reply(200, {
         "@odata.context": "https://services.odata.org/TripPinRESTierService/(S(uci0tksnfrvhp3ruq1bn5bps))/$metadata#People/$entity",
         "UserName": "scottketchum",

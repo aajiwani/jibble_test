@@ -1,14 +1,14 @@
 /* eslint-disable no-eval */
 
 const {expect, test} = require('@oclif/test');
-const {cli} = require('cli-ux');
+const UNIQUE_KEY = require('./../const').UNIQUE_KEY;
 
 describe('list_people', () => {
   test
   .stdout()
   .nock('https://services.odata.org', api =>
     api
-      .get('/TripPinRESTierService/People')
+      .get(`/TripPinRESTierService/(S(${UNIQUE_KEY}))/People`)
       .reply(200, {
         "@odata.context": "https://services.odata.org/TripPinRESTierService/(S(bunmplfmltepvmdym2er20yh))/$metadata#People",
         "value": [
@@ -518,7 +518,7 @@ describe('list_people', () => {
   .stdout()
   .nock('https://services.odata.org', api =>
     api
-      .get('/TripPinRESTierService/People?$top=3')
+      .get(`/TripPinRESTierService/(S(${UNIQUE_KEY}))/People?$top=3`)
       .reply(200, {
         "@odata.context": "https://services.odata.org/TripPinRESTierService/(S(bunmplfmltepvmdym2er20yh))/$metadata#People",
         "value": [
