@@ -1,11 +1,12 @@
-const {expect, test} = require('@oclif/test')
+const {expect, test} = require('@oclif/test');
+const UNIQUE_KEY = require('./../const').UNIQUE_KEY;
 
 describe('search_people', () => {
   test
   .stdout()
   .nock('https://services.odata.org', api =>
     api
-      .get('/TripPinRESTierService/People')
+      .get(`/TripPinRESTierService/(S(${UNIQUE_KEY}))/People`)
       .reply(200, {
         "@odata.context": "https://services.odata.org/TripPinRESTierService/(S(bunmplfmltepvmdym2er20yh))/$metadata#People",
         "value": [
@@ -514,7 +515,7 @@ describe('search_people', () => {
   .stdout()
   .nock('https://services.odata.org', api =>
     api
-      .get(`/TripPinRESTierService/People?$filter=FirstName eq 'Ronald'`)
+      .get(`/TripPinRESTierService/(S(${UNIQUE_KEY}))/People?$filter=FirstName eq 'Ronald'`)
       .reply(200, {
         "@odata.context": "https://services.odata.org/TripPinRESTierService/(S(bunmplfmltepvmdym2er20yh))/$metadata#People",
         "value": [
